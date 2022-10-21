@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'echo "The pipeline is running xoxoxo"'
-                sh 'python --version'
+                bat 'echo "The pipeline is running xoxoxo"'
+                bat 'python --version'
             }
         }
     }
