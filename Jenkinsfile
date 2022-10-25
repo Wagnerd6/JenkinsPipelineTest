@@ -4,7 +4,7 @@ node {
     
     stage('Build') {
         echo "Build stage"
-        python3 --version
+        sh 'python3 --version'
     }
     stage('Test') {
         echo "Test stage"
