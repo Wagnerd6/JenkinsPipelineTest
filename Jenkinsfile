@@ -5,9 +5,9 @@ node {
     stage('Build') {
         echo "Build stage"
         // Set up python
-        sh 'sudo apt install python3'
+        sh 'sudo apt --yes install python3'
         sh 'python3 --version'
-        sh 'sudo apt install python3-pip' 
+        sh 'sudo apt --yes install python3-pip' 
     }
     stage('Test') {
         echo "Test stage"
