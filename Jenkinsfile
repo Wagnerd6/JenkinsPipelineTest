@@ -12,9 +12,10 @@ node {
     stage('Test') {
         echo "Test stage"
         sh 'pwd'
-        sh 'cd python/FirstPipeline'
-        sh 'pwd'
-        sh 'python3 -m pytest'
+        dir('python/FirstPipeline') {
+            sh 'pwd'
+            sh 'python3 -m pytest'
+        }
     }
     stage('Deploy') {
         echo "Deploy stage"
