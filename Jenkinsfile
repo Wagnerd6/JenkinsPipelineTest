@@ -1,4 +1,3 @@
-/* Requires the Docker Pipeline plugin */ 
 node {
     checkout scm
     
