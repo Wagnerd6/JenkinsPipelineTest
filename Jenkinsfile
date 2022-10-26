@@ -11,6 +11,8 @@ node {
     }
     stage('Test') {
         echo "Test stage"
+        sh 'pwd'
+        sh 'cd python/FirstPipeline'
         sh 'python3 -m pytest'
     }
     stage('Deploy') {
