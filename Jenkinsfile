@@ -7,7 +7,8 @@ node {
         // Set up python
         sh 'sudo apt --yes install python3'
         sh 'python3 --version'
-        sh 'sudo apt --yes install python3-pip' 
+        sh 'sudo apt --yes install python3-pip'
+        sh 'pip3 install pytest'
     }
     stage('Test') {
         echo "Test stage"
