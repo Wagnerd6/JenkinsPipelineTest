@@ -11,6 +11,8 @@ node {
     }
     stage('Test') {
         echo "Test stage"
+        pwd 
+        //sh 'python3 -m pytest'
     }
     stage('Deploy') {
         echo "Deploy stage"
