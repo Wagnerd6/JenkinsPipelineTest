@@ -21,6 +21,6 @@ node {
         echo "Deploy stage"
         emailext body: 'Test Message',
             subject: 'Test Subject',
-            to: 'dennis.wagner@sedenius.com wennisdagner@yahoo.com' 
+            to: 'dennis.wagner@sedenius.com,wennisdagner@yahoo.com' 
     }
 }
